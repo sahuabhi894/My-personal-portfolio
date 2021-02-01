@@ -1,5 +1,4 @@
-{{blog.title}}
-hey theme-color
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -51,7 +50,7 @@ hey theme-color
   </head>
   <body>
     
-<header>
+<!-- <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="{% url 'home'%}">Akash Sahu</a>
@@ -68,20 +67,20 @@ hey theme-color
           </div>
         </div>
       </nav>
-</header>
+</header> -->
 
 <main>
- <div class="container">
+ <div class="container border border-dark">
 
  
 
- <h1 class="text-center pt-3"> {{blog.title}}</h1>
+ <h1 class="text-center pt-3 btn-primary mt-3 pb-3"> {{blog.title}}</h1>
  <p class="text-center">{{blog.pub_date_preety}}</p>
  <br/>
- <img class="img-fluid" src="{{blog.image.url}}" height=400/>
+ <img class="img-fluid rounded mx-auto d-block" src="{{blog.image.url}}" style="height: 400px;width: 800px;"/>
  <br/>
  <br/>
- <p>{{blog.body}}</p>
+ <p class="text-center">{{blog.body}}</p>
 
 
 
